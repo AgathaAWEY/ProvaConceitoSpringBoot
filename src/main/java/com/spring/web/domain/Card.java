@@ -9,8 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 /**
  * Classe de dominio Card
  */
@@ -24,7 +22,6 @@ public class Card implements Serializable {
 	private String name;
 	private String bin;
 		
-	@JsonManagedReference
 	@ManyToOne
 	@JoinColumn(name="Financial_id")
 	private FinancialInstitution financialInstitution;
