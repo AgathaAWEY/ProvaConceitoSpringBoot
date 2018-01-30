@@ -1,7 +1,13 @@
 package com.spring.web.services.exceptions;
 
-
+/**
+ * Classe ObjectNotFoundException de Excecao personalizada
+ * 
+ * @author agatha
+ *
+ */
 public class ObjectNotFoundException extends RuntimeException {
+	
 	private static final long serialVersionUID = 1L;
 
 	
